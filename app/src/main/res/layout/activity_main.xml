@@ -58,7 +58,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="/" />
+            android:text="/"
+            android:onClick="onOperator"/>
     </LinearLayout>
 
     <!--  Row2  -->
@@ -99,7 +100,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="*" />
+            android:text="*"
+            android:onClick="onOperator"/>
     </LinearLayout>
 
     <!--  Row3  -->
@@ -140,7 +142,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="-" />
+            android:text="-"
+            android:onClick="onOperator"/>
     </LinearLayout>
 
     <!--  Row4  -->
@@ -181,7 +184,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="+" />
+            android:text="+"
+            android:onClick="onOperator"/>
     </LinearLayout>
 
     <!--  Row5  -->

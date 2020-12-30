@@ -51,6 +51,21 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // 演算子を追加する
+    fun onOperator(view: View) {
+        // 最後に押したのが数字且つ演算子が使われていない場合
+        if(lastNumeric && !isOperatorAdd(tvInput.text.toString())) {
+
+            // 演算子を追加する
+            tvInput.append((view as Button).text)
+
+            // 最後に押したのは演算子
+            lastNumeric = false
+            // 演算子を押した後にドットを押せないようにする
+            lastDot = false
+        }
+    }
+
     // いずれかの演算子が使われているかどうか確認する
     private fun isOperatorAdd(value: String) : Boolean {
         // 「-」で始まる場合は無視する
