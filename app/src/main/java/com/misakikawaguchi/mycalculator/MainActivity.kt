@@ -75,4 +75,17 @@ class MainActivity : AppCompatActivity() {
             (value.contains("/") || value.contains("*") || value.contains("-") || value.contains("+"))
         }
     }
+
+    // 小数点以下のゼロを削除する
+    private fun removeZeroAfterDot(result: String): String {
+        var value = result
+
+        // 「.0」が含まれている場合
+        if(result.contains(".0")) {
+            // 一番最初の文字から文字数-2までの値をvalueに代入する
+            value = result.substring(0, result.length -2)
+        }
+
+        return value
+    }
 }
