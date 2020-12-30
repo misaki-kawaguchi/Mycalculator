@@ -26,4 +26,14 @@ class MainActivity : AppCompatActivity() {
         // 最後に押されたキーが数値のため「true」にする
         lastNumeric = true
     }
+
+    // 入力した値をクリアする
+    fun onClear(view: View) {
+        // 入力した値をクリアする
+        tvInput.text = ""
+
+        // falseにリセットする
+        lastNumeric = false
+        lastDot =false
+    }
 }
