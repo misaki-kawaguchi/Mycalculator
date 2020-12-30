@@ -36,4 +36,18 @@ class MainActivity : AppCompatActivity() {
         lastNumeric = false
         lastDot =false
     }
+
+    // ドットを追加
+    fun onDecimalPoint(view: View) {
+        // 最後に押した値が数値且つドットを押していない場合
+        if(lastNumeric && !lastDot) {
+            // ドットを追加できるようにする
+            tvInput.append(".")
+
+            // 最後に押されたキーはドット
+            lastNumeric = false
+            // ドットを押せないようにする
+            lastDot = false
+        }
+    }
 }
