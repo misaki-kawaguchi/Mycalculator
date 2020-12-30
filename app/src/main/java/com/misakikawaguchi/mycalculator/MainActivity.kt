@@ -3,6 +3,8 @@ package com.misakikawaguchi.mycalculator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,6 +21,9 @@ class MainActivity : AppCompatActivity() {
 
     // 電卓の数字をtvInputに表示するようにする
     fun onDigit(view: View) {
+        tvInput.append((view as Button).text)
 
+        // 最後に押されたキーが数値のため「true」にする
+        lastNumeric = true
     }
 }
