@@ -50,4 +50,14 @@ class MainActivity : AppCompatActivity() {
             lastDot = false
         }
     }
+
+    // いずれかの演算子が使われているかどうか確認する
+    private fun isOperatorAdd(value: String) : Boolean {
+        // 「-」で始まる場合は無視する
+        return if (value.startsWith("-")) {
+            false
+        }else {
+            (value.contains("/") || value.contains("*") || value.contains("-") || value.contains("+"))
+        }
+    }
 }
