@@ -34,21 +34,24 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="7" />
+            android:text="7"
+            android:onClick="onDigit"/>
 
         <Button
             android:id="@+id/btnEight"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="8" />
+            android:text="8"
+            android:onClick="onDigit"/>
 
         <Button
             android:id="@+id/btnNine"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="9" />
+            android:text="9"
+            android:onClick="onDigit"/>
 
         <Button
             android:id="@+id/btnDivide"
@@ -72,21 +75,24 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="4" />
+            android:text="4"
+            android:onClick="onDigit"/>
 
         <Button
             android:id="@+id/btnFive"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="5" />
+            android:text="5"
+            android:onClick="onDigit"/>
 
         <Button
             android:id="@+id/btnSix"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="6" />
+            android:text="6"
+            android:onClick="onDigit"/>
 
         <Button
             android:id="@+id/btnMultiply"
@@ -110,21 +116,24 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="1" />
+            android:text="1"
+            android:onClick="onDigit"/>
 
         <Button
             android:id="@+id/btnTwo"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="2" />
+            android:text="2"
+            android:onClick="onDigit"/>
 
         <Button
             android:id="@+id/btnThree"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="3" />
+            android:text="3"
+            android:onClick="onDigit"/>
 
         <Button
             android:id="@+id/btnSubtract"
@@ -155,7 +164,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="0" />
+            android:text="0"
+            android:onClick="onDigit"/>
 
         <Button
             android:id="@+id/btnClear"
